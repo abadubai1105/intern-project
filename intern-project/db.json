@@ -1,0 +1,33 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "fullname": "Ted James",
+      "dob": "1991-7-20",
+      "gender": "male",
+      "adress": "Phoenix, Arizona",
+      "email": "tedjames@gmail.com",
+      "phone": "0331811999"
+    },
+    {
+      "id": 2,
+      "fullname": "Michelle Thompson",
+      "dob": "1992-7-20",
+      "gender": "female",
+      "adress": "Encinitas, California",
+      "email": "michellethompson@gmail.com",
+      "phone": "0331811990"
+    },
+    {
+      "id": 3,
+      "fullname": "Zed Bishop",
+      "dob": "1989-7-20",
+      "gender":"male",
+      "adress": "Seattle, Washington",
+      "email": "zedbishop@gmail.com",
+      "phone": "0331811900"
+    }
+  ]
+
+  
+}
