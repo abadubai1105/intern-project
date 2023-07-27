@@ -1,33 +1,103 @@
 {
   "customer": [
     {
-      "id": 1,
       "fullname": "Ted James",
-      "dob": "1991-7-20",
-      "gender": "male",
-      "adress": "Phoenix, Arizona",
+      "dob": "1994-06-03T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Phoenix, Arizona",
       "email": "tedjames@gmail.com",
-      "phone": "0331811999"
+      "phone": "0331811997",
+      "id": 1
     },
     {
-      "id": 2,
       "fullname": "Michelle Thompson",
-      "dob": "1992-7-20",
-      "gender": "female",
-      "adress": "Encinitas, California",
+      "dob": "1972-06-05T17:00:00.000Z",
+      "gender": "Female",
+      "address": "Encinitas, California",
       "email": "michellethompson@gmail.com",
-      "phone": "0331811990"
+      "phone": "0331811990",
+      "id": 2
     },
     {
-      "id": 3,
       "fullname": "Zed Bishop",
-      "dob": "1989-7-20",
-      "gender":"male",
-      "adress": "Seattle, Washington",
+      "dob": "1988-12-22T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Seattle, Washington",
       "email": "zedbishop@gmail.com",
-      "phone": "0331811900"
+      "phone": "0331811900",
+      "id": 3
+    },
+    {
+      "fullname": "Tina Adams",
+      "dob": "1999-06-05T17:00:00.000Z",
+      "gender": "Female",
+      "address": "Chandler,Arizona",
+      "email": "tinaadams@gmail.com",
+      "phone": "0999010000",
+      "id": 4
+    },
+    {
+      "fullname": "Igor Minar",
+      "dob": "2000-04-14T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Dallas, Texas",
+      "email": "igorminar@gmail.com",
+      "phone": "0311556677",
+      "id": 5
+    },
+    {
+      "fullname": "Brad Green",
+      "dob": "1991-03-31T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Orlando, Florida",
+      "email": "bradgreen@gmail.com",
+      "phone": "0366644778",
+      "id": 6
+    },
+    {
+      "fullname": "Misko Hevery",
+      "dob": "1998-10-07T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Carey, North California",
+      "email": "miskohevery@gmail.com",
+      "phone": "0664477881",
+      "id": 7
+    },
+    {
+      "fullname": "Heedy Wahlin",
+      "dob": "1996-04-05T17:00:00.000Z",
+      "gender": "Female",
+      "address": "Anaheim, California",
+      "email": "heedywahlin@gmail.com",
+      "phone": "0444558877",
+      "id": 8
+    },
+    {
+      "fullname": "John Papa",
+      "dob": "1976-01-04T17:00:00.000Z",
+      "gender": "Male",
+      "address": "Oriando, Florida",
+      "email": "johnpapa@gmail.com",
+      "phone": "0555664413",
+      "id": 9
+    },
+    {
+      "fullname": "Tonya Smith",
+      "dob": "1994-01-30T17:00:00.000Z",
+      "gender": "Female",
+      "address": "Atlanta, Geogia",
+      "email": "tonyasmith@gmail.com",
+      "phone": "0679875642",
+      "id": 10
+    },
+    {
+      "fullname": "NghiaCh4",
+      "dob": "2001-05-10T17:00:00.000Z",
+      "gender": "Male",
+      "address": "vietnam",
+      "email": "chnghia@gmail.com",
+      "phone": "3555555512",
+      "id": 11
     }
   ]
-
-  
 }

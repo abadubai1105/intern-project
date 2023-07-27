@@ -1,0 +1,39 @@
+.navbar{
+    justify-content: space-between;
+}
+
+.me-2{
+    float: left;
+    justify-content: center;
+    margin: 5px;
+    display: block;     
+}
+
+.custom-img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 5px;
+    justify-content: center;
+}
+
+.material-symbols-outlined{
+    margin-right:5px;
+}
+
+.containner{
+    float: left;
+}
+
+.card-cus{
+    display: table-cell;
+    max-width: 600px;
+}
+
+a{
+   
+    margin-left: 10px;
+    text-decoration: none;
+    float:left;
+    color: white;
+}

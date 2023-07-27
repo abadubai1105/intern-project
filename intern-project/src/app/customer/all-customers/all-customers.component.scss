@@ -1,6 +1,6 @@
 .example-card {
     width: 250px;
-    height: 250px;
+    height: 180px;
     background-color: white;
     margin: 20px;
 }
@@ -15,4 +15,13 @@
     height: 70px;
     margin: 10px;
     float: left;
+}
+
+.updateBtn{
+    margin:5px;
+}
+
+.card-update{
+    border: none;
+    margin: 0;
 }

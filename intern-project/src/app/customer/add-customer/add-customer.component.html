@@ -1,0 +1,97 @@
+<div class="container mt-4">
+    <div class="add-form m-4 p-5">
+        <!-- Add form -->
+        <form [formGroup]="addCustomer">
+            <div class="row" formGroupNamev="customerDetails">
+                <div class="col-md-6">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Fullname</mat-label>
+                        <input matInput placeholder="E.x: Cai Huu Nghia" formControlName="fullname" >
+                        <mat-icon matSuffix>badge</mat-icon>
+                    </mat-form-field>
+                    <div *ngIf="addCustomer.controls['fullname'].invalid && (addCustomer.controls['fullname'].dirty || addCustomer.controls['fullname'].touched)">
+                        <small *ngIf="addCustomer.controls['fullname'].errors">
+                            Please enter the customer's name!
+                        </small>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Date of Birth (D.O.B)</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="dob">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker touchUi #picker></mat-datepicker>
+                    </mat-form-field>
+                    <div *ngIf="addCustomer.controls['dob'].invalid && (addCustomer.controls['dob'].dirty || addCustomer.controls['dob'].touched)">
+                        <small *ngIf="addCustomer.controls['dob'].errors">
+                            Please enter the customer's date of birth!
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="address" placeholder="E.x: Binh Thanh District, Ho Chi Minh City">
+                        <mat-icon matSuffix>home_pin</mat-icon>
+                    </mat-form-field>
+                    <div *ngIf="addCustomer.controls['address'].invalid && (addCustomer.controls['address'].dirty || addCustomer.controls['address'].touched)">
+                        <small *ngIf="addCustomer.controls['address'].errors">
+                            Please enter the customer's address!
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email" placeholder="E.x: chn@gmail.com">
+                        <mat-icon matSuffix>mail</mat-icon>
+                    </mat-form-field>
+                    <div *ngIf="addCustomer.controls['email'].invalid && (addCustomer.controls['email'].dirty || addCustomer.controls['email'].touched)">
+                        <small *ngIf="addCustomer.controls['email'].errors">
+                            Please enter the customer's email! Hint: abc@example.com
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Phone</mat-label>
+                        <input matInput formControlName="phone" placeholder="E.x: 0999-999-999">
+                        <mat-icon matSuffix>call</mat-icon>
+                    </mat-form-field>
+                    <div *ngIf="addCustomer.controls['phone'].invalid && (addCustomer.controls['phone'].dirty || addCustomer.controls['phone'].touched)">
+                        <small *ngIf="addCustomer.controls['phone'].errors">
+                            The phone number must be 10 numbers!
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                    <label id="example-radio-group-label" class = "text-white">Gender:</label>
+                    <mat-radio-group formControlName="gender" class="example-radio-group" >
+                    <mat-radio-button class="example-radio-button" *ngFor= "let gender of genders" [value]="gender">
+                        {{gender}}
+                    </mat-radio-button>
+                    </mat-radio-group>
+                    <div *ngIf="addCustomer.controls['gender'].invalid">
+                        <small *ngIf="addCustomer.controls['gender'].errors">
+                            Please choose gender!
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <button *ngIf="!checkUpdate" (click)="add()" class="add-btn mt-4" mat-raised-button color="accent" [disabled]="addCustomer.invalid">
+                Add
+            </button>
+            
+            <button *ngIf="checkUpdate" (click)="update()" class="add-btn mt-4" mat-raised-button color="primary" [disabled]="addCustomer.invalid">
+                Update
+            </button>
+        </form>
+    </div>
+</div>

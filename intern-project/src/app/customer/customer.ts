@@ -3,7 +3,7 @@ export interface Customer {
     "fullname": string,
     "dob": Date,
     "gender": string,
-    "adress": string,
+    "address": string,
     "email": string,
     "phone": string
 }
